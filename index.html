@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suryansh Skyline - AI Interior Design POC</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+        
+        /* Each section takes full width */
+        .section {
+            width: 100%;
+            display: block;
+        }
+        
+        .section img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* MVP Section - Full Screen */
+        .mvp-section {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            background: #f5f5f5;
+        }
+        
+        .mvp-section iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        /* Loading indicator for iframe */
+        .mvp-loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+            color: #666;
+            z-index: 1;
+        }
+        
+        /* Optional: Add smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Section 1: Hero / Home -->
+    <div class="section" id="hero">
+        <img src="Screenshot 2025-11-27 145956.png" alt="Suryansh Skyline Hero">
+    </div>
+
+    <!-- Section 2: Lifestyle -->
+    <div class="section" id="lifestyle">
+        <img src="Screenshot 2025-11-27 150221.png" alt="Lifestyle Section">
+    </div>
+
+    <!-- Section 3: External View -->
+    <div class="section" id="external-view">
+        <img src="Screenshot 2025-11-27 150308.png" alt="External View">
+    </div>
+
+    <!-- Section 4: Internal View -->
+    <div class="section" id="internal-view">
+        <img src="Screenshot 2025-11-27 150339.png" alt="Internal View">
+    </div>
+
+    <!-- MVP SECTION - AI Interior Design Tool (Full Screen) -->
+    <div class="mvp-section" id="mvp-tool">
+        <div class="mvp-loading">Loading AI Design Tool...</div>
+        <iframe 
+    src="https://interior-frontend-five.vercel.app/?client=skyline"
+    title="AI Interior Design Generator"
+    onload="this.previousElementSibling.style.display='none'">
+</iframe>
+    </div>
+
+    <!-- Section 5: Amenities -->
+    <div class="section" id="amenities">
+        <img src="Screenshot 2025-11-27 150437.png" alt="Amenities">
+    </div>
+
+    <!-- Section 6: Environmental Amenities -->
+    <div class="section" id="environmental">
+        <img src="Screenshot 2025-11-27 150508.png" alt="Environmental Amenities">
+    </div>
+
+    <!-- Section 7: Outdoor Area -->
+    <div class="section" id="outdoor">
+        <img src="Screenshot 2025-11-27 150533.png" alt="Outdoor Area">
+    </div>
+
+    <!-- Section 8: Specification -->
+    <div class="section" id="specification">
+        <img src="Screenshot 2025-11-27 150557.png" alt="Specification">
+    </div>
+
+    <!-- Section 9: Floor Plan -->
+    <div class="section" id="floor-plan">
+        <img src="Screenshot 2025-11-27 150616.png" alt="Floor Plan">
+    </div>
+
+    <!-- Section 10: Location & Footer -->
+    <div class="section" id="location-footer">
+        <img src="Screenshot 2025-11-27 150646.png" alt="Location and Contact">
+    </div>
+
+</body>
+</html>
